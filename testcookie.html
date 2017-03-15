@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function setCookie(cname,cvalue,exdays) {
+debugger;
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function User(){
+	this.fname = "dinh";
+  	this.lname ="nam";
+}
+
+function checkCookie() {
+
+ var Quo = function (string) {    this.status = string; };
+
+Quo.prototype.get_status = function () {    return this.status; };
+
+var myQuo = new Quo("confused");
+document.writeln(myQuo.get_status()); 
+}
+
+
+
+</script>
+</head>
+<body onload="checkCookie()">
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	
+	<title>Time table</title>
+</head>
+<body>
+	<div class="account" id="acc">
+	<h2>xxx 's table</h2>
+	</div>
+	<div class="wrapper">
+	<div class="title">
+		<div class="categories">Categories</div>
+		<div class="timetable">Time table</div>
+	</div>
+	<div class="content">
+		<div class="categories" id="list_categories">
+		<ul>
+			<a href="javascript:void(0)" id='cate1'><li>Category subject 1</li></a>
+			<a href="javascript:void(0)" id='cate2'><li>Category subject 1</li></a>
+			<a href="javascript:void(0)" id='cate3'><li>Category subject 1</li></a>
+			<a href="javascript:void(0)" id='cate4'><li>Category subject 1</li></a>
+		</ul>
+		</div>
+		<table id="table_content" class="timetable" border="1">
+			<tr>
+				<td></td>
+				<td>Mon</td>
+				<td>Tue</td>
+				<td>Web</td>
+				<td>Thu</td>
+				<td>Fri</td>
+				<td>Sat</td>
+			</tr>
+		
+			<tr>
+				<td>1</td>
+				<td id="td1_1" class="destination"></td>
+				<td id="td1_2" class="destination"></td>
+				<td id="td1_3" class="destination"></td>
+				<td id="td1_4" class="destination"></td>
+				<td id="td1_5" class="destination"></td>
+				<td id="td1_6" class="destination"></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td id="td2_1" class="destination"></td>
+				<td id="td2_2" class="destination"></td>
+				<td id="td2_3" class="destination"></td>
+				<td id="td2_4" class="destination"></td>
+				<td id="td2_5" class="destination"></td>
+				<td id="td2_6" class="destination"></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td id="td3_1" class="destination"></td>
+				<td id="td3_2" class="destination"></td>
+				<td id="td3_3" class="destination"></td>
+				<td id="td3_4" class="destination"></td>
+				<td id="td3_5" class="destination"></td>
+				<td id="td3_6" class="destination"></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td id="td4_1" class="destination"></td>
+				<td id="td4_2" class="destination"></td>
+				<td id="td4_3" class="destination"></td>
+				<td id="td4_4" class="destination"></td>
+				<td id="td4_5" class="destination"></td>
+				<td id="td4_6" class="destination"></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td id="td5_1" class="destination"></td>
+				<td id="td5_2" class="destination"></td>
+				<td id="td5_3" class="destination"></td>
+				<td id="td5_4" class="destination"></td>
+				<td id="td5_5" class="destination"></td>
+				<td id="td5_6" class="destination"></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td id="td6_1" class="destination"></td>
+				<td id="td6_2" class="destination"></td>
+				<td id="td6_3" class="destination"></td>
+				<td id="td6_4" class="destination"></td>
+				<td id="td6_5" class="destination"></td>
+				<td id="td6_6" class="destination"></td>
+			</tr>	
+			<tr>
+				<td>7</td>
+				<td id="td7_1" class="destination"></td>
+				<td id="td7_2" class="destination"></td>
+				<td id="td7_3" class="destination"></td>
+				<td id="td7_4" class="destination"></td>
+				<td id="td7_5" class="destination"></td>
+				<td id="td7_6" class="destination"></td>
+			</tr>
+		</table>
+	</div>	
+	<div class="toolbar">
+		<div class="categories">
+		<a class="item_toolbar" id="menu_item" href="javascript:void(0)" ></a>
+		<a class="item_toolbar" id="search_item"  href="javascript:void(0)"></a>
+		<a class="item_toolbar" id="setting_item"  href="javascript:void(0)"></a>
+		</div>
+		<div class="timetable">
+		<button id='save-button' type="submit" class="submit_button" > Save TimeTable</button>
+		<div id="count_hidden">0</div>
+		</div>
+	</div>	
+	</div>
+	<script type="text/javascript" src="./js/login.js"></script>
+	<script type="text/javascript" src="./js/opp.js"></script>
+	<script type="text/javascript" src="./js/drag.js" ></script>
+</body>
+</html>
